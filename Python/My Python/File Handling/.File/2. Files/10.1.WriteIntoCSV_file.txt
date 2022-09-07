@@ -1,0 +1,5 @@
+Name,Age,Country
+Amir ,21,Nepal
+Resu ,23,Japan
+John ,48,USA
+Mini Ebanbe,29,Wkanda

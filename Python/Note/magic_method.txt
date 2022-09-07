@@ -1,0 +1,5 @@
+__hash__ 
+__init__
+__str__
+__name__
+__main__

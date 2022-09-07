@@ -1,0 +1,687 @@
+import random
+from words import word_list
+
+def get_word():
+    word = random.choice(word_list) 
+    return word.upper() 
+
+def play(word):
+    word_complition = "_"*len(word)
+    guessed = False
+    guessed_letters = []
+    guessed_words = []
+    tries = 6 #number of body part of hangman
+    print("Let's play Hangman !")
+    print(display_hangman(tries))
+    print(word_complition)
+    print("\n")
+    while not guessed and tries > 0:
+        guess = input("Please guess a letter or word : ").upper()
+
+        if len(guess) ==1 and guess.isalpha():
+            if guess in guessed_letters :
+                print('You have already guessed the letter ',guess)
+            elif guess not in word:
+                print(guess," is not in the word.")
+                tries -= 1
+                guessed_letters.append(guess)
+            else:
+                print('Good job, ',guess,' is the word.')
+                guessed_letters.append(guess)
+                word_as_list = list(word_completion)
+                indices = [i for i, letter in enumerate(word) if letter == guess]
+                for index in indices:
+                    word_as_list[index] = guess
+                word_complition = "".join(word_as_list)
+                if "_" not in word_complition:
+                    guessed = True
+
+        elif len(guess) == len(word) and guess.isalpha():
+            if guess in guessed_words:
+                print("You already guessed the word ",guess)
+            elif guess != word:
+                print(guess," is not in the word.")
+                tries -= 1
+                guessed_words.append(guess)
+            else:
+                guessed = True
+                word_completion = word
+
+        else:
+            print('Not a valid guess.')
+        print(display_hangman(tries))
+        print(word_completion)
+        print('\n')
+
+        if guessed:
+            print("Congrats !")
+        else:
+            print("Try, later !")
+
+
+
+def display_hangman(tries):
+    stages = [  """
+                    -------------
+                    |           |
+                    |           O
+                    |          \ /
+                    |           |
+                    |          / \
+                    |
+                    """ ,
+                    """
+                    -------------
+                    |           |
+                    |           O
+                    |          \ /
+                    |           |
+                    |          / 
+                    |
+                    """,
+                    """
+                    -------------
+                    |           |
+                    |           O
+                    |          \ /
+                    |           |
+                    |          
+                    |
+                    """,
+                    """
+                    -------------
+                    |           |
+                    |           O
+                    |          \ /
+                    |           
+                    |          
+                    |
+                    """,
+                    """
+                    -------------
+                    |           |
+                    |           O
+                    |          \ 
+                    |           
+                    |          
+                    |
+                    """,
+                    """
+                    -------------
+                    |           |
+                    |           O
+                    |          
+                    |           
+                    |           
+                    |
+                    """,
+                    """
+                    -------------
+                    |           |
+                    |           
+                    |          
+                    |           
+                    |           
+                    |
+                    """
+             ]
+    return stages[tries]
+
+
+def main():
+    word = get_word()
+    play(word)
+    while input("Play Again? (Y/N) ".upper() == "Y"):
+        word = get_word()
+        play(word)
+
+if __name__ == "__main__":
+
+
+
+
+
+
+
+#1 1 initial random choice word and guess char and check if guess char is in the choice word
+
+import random
+from words import word_list
+
+def get_word():
+    picked = random.choice(word_list) 
+    return picked.upper() 
+
+def play(picked):
+    blank = "_ "*len(picked)
+    print (blank)
+    print (picked)
+    print('\n')
+    for char in picked:
+        print(char)
+    
+    guess_word = input('Guess a word : ').upper()
+    print(guess_word)
+
+    if guess_word in picked:
+        print(True)
+
+sabda = get_word()
+play(sabda)
+
+
+
+
+#2 2. Trying to replace blank_respective_index with guessed_word if in picked_word with the corresponding index of original word but it gives error as replaces respective to blacked_index_char rather 
+than original_index_char
+
+
+
+import random
+from words import word_list
+
+def get_word():
+    picked = random.choice(word_list) 
+    return picked.upper() 
+
+def play(picked):
+    blank = "_ "*len(picked)
+    print (blank)
+    print (picked)
+    print('\n')
+    for char in picked:
+        print(char)
+    
+    guess_word = input('Guess a word : ').upper()
+    print(guess_word)
+
+    if guess_word in picked:
+        print(True)
+
+        indx = picked.index(guess_word)
+        print('Index position of guessed word at picked word ',guess_word,' is ',indx)
+
+        print('Picked work : ',picked[indx])
+
+        print(blank.replace(blank[indx*2], guess_word))
+
+
+    
+
+sabda = get_word()
+play(sabda)
+
+
+
+
+
+#3
+
+import random
+from words import word_list
+
+def get_word():
+    picked = random.choice(word_list) 
+    return picked.upper() 
+
+def play(picked):
+    blank = "_ "*len(picked)
+    print (blank)
+    print (picked)
+    print('\n')
+
+    for char in picked:
+        print(char)
+    
+    guess_letter = input('Guess a word : ').upper()
+
+    if guess_letter  in picked:
+        print('yes ',guess_letter)
+        import re
+        indxes = re.finditer(guess_letter, picked) # find all the index that consist of given guessed_letter
+        indxes_positions = [indx.start() for indx in indxes] # cast all index of given guessed_letter as list
+        for idx in indxes_positions:
+            blank = blank[:idx*2] + guess_letter + blank[idx*2+1:] #replace blank with corresponding guess_letter
+        print(blank)
+        
+
+    
+
+sabda = get_word()
+play(sabda)
+
+
+
+
+
+
+
+#4 limits tries
+
+
+
+import random
+from words import word_list
+
+def get_word():
+    picked = random.choice(word_list) 
+    return picked.upper() 
+
+def play(picked):
+    blank = "_ "*len(picked)
+    print (blank)
+    print (picked)
+    print('\n')
+
+    for char in picked:
+        print(char)
+    
+    i=1
+    while i<=len(picked):
+        i=1+i
+        guess_letter = input('Guess a word : ').upper()
+
+        if guess_letter  in picked:
+            print('yes ',guess_letter)
+            import re
+            indxes = re.finditer(guess_letter, picked) # find all the index that consist of given guessed_letter
+            indxes_positions = [indx.start() for indx in indxes] # cast all index of given guessed_letter as list
+            for idx in indxes_positions:
+                blank = blank[:idx*2] + guess_letter + blank[idx*2+1:] #replace blank with corresponding guess_letter
+            print(blank)
+            
+        
+
+    
+
+sabda = get_word()
+play(sabda)
+
+
+
+
+
+#5 final
+
+
+import random
+from words import word_list
+
+
+
+def display_hangman(tries):
+    stages = [  """
+                    -------------
+                    |           |
+                    |           O
+                    |          \ /
+                    |           |
+                    |          / L
+                    |
+                    """ ,
+                    """
+                    -------------
+                    |           |
+                    |           O
+                    |          \ /
+                    |           |
+                    |          / 
+                    |
+                    """,
+                    """
+                    -------------
+                    |           |
+                    |           O
+                    |          \ /
+                    |           |
+                    |          
+                    |
+                    """,
+                    """
+                    -------------
+                    |           |
+                    |           O
+                    |          \ /
+                    |           
+                    |          
+                    |
+                    """,
+                    """
+                    -------------
+                    |           |
+                    |           O
+                    |          \ 
+                    |           
+                    |          
+                    |
+                    """,
+                    """
+                    -------------
+                    |           |
+                    |           O
+                    |          
+                    |           
+                    |           
+                    |
+                    """,
+                    """
+                    -------------
+                    |           |
+                    |           
+                    |          
+                    |           
+                    |           
+                    |
+                    Game Over ***********
+                    """
+             ]
+    return stages[tries]
+
+
+def get_word():
+    picked = random.choice(word_list) 
+    return picked.upper() 
+
+def play(picked):
+    blank = "_ "*len(picked)
+    print (blank)
+    print (picked)
+    print('\n')
+
+    for char in picked:
+        print(char)
+    
+    tries = 0
+    while tries<6:
+        guess_letter = input('Guess a word : ').upper()
+
+        if guess_letter  in picked:
+            print('yes ',guess_letter)
+            import re
+            indxes = re.finditer(guess_letter, picked) # find all the index that consist of given guessed_letter
+            indxes_positions = [indx.start() for indx in indxes] # cast all index of given guessed_letter as list
+            for idx in indxes_positions:
+                blank = blank[:idx*2] + guess_letter + blank[idx*2+1:] #replace blank with corresponding guess_letter
+            print(blank)
+            print('Tries : ',tries)
+            print(display_hangman(tries))
+        else:
+            tries=tries+1
+            print('Tries : ',tries)
+            print(display_hangman(tries))
+            
+            
+        
+
+    
+
+sabda = get_word()
+play(sabda)
+
+
+
+
+
+#6 check repeat and alphabet :
+
+import random
+from words import word_list
+
+guess_list = []
+
+
+def display_hangman(tries):
+    stages = [  """
+                    -------------
+                    |           |
+                    |           O
+                    |          \ /
+                    |           |
+                    |          / L
+                    |
+                    """ ,
+                    """
+                    -------------
+                    |           |
+                    |           O
+                    |          \ /
+                    |           |
+                    |          / 
+                    |
+                    """,
+                    """
+                    -------------
+                    |           |
+                    |           O
+                    |          \ /
+                    |           |
+                    |          
+                    |
+                    """,
+                    """
+                    -------------
+                    |           |
+                    |           O
+                    |          \ /
+                    |           
+                    |          
+                    |
+                    """,
+                    """
+                    -------------
+                    |           |
+                    |           O
+                    |          \ 
+                    |           
+                    |          
+                    |
+                    """,
+                    """
+                    -------------
+                    |           |
+                    |           O
+                    |          
+                    |           
+                    |           
+                    |
+                    """,
+                    """
+                    -------------
+                    |           |
+                    |           
+                    |          
+                    |           
+                    |           
+                    |
+                    Game Over ***********
+                    """
+             ]
+    return stages[tries]
+
+
+def get_word():
+    picked = random.choice(word_list) 
+    return picked.upper() 
+
+def play(picked):
+    blank = "_ "*len(picked)
+    print (blank)
+    print (picked)
+    print('\n')
+
+    for char in picked:
+        print(char)
+    
+    tries = 0
+    while tries<6:
+        guess_letter = input('Guess a word : ').upper()
+
+        guess_type = guess_letter.isalpha() #check if guess_letter is alphabet or not?
+        if guess_type == False:
+            print('Please Input Alphabets only !!!')
+            continue
+
+        if guess_letter in guess_list: #check if guess_letter is already inputed or not?
+            print('Already Guessed, Please guess another letter : ')
+            continue
+        guess_list.append(guess_letter)
+            
+
+        if guess_letter  in picked:
+            print('yes ',guess_letter)
+            import re
+            indxes = re.finditer(guess_letter, picked) # find all the index that consist of given guessed_letter
+            indxes_positions = [indx.start() for indx in indxes] # cast all index of given guessed_letter as list
+            for idx in indxes_positions:
+                blank = blank[:idx*2] + guess_letter + blank[idx*2+1:] #replace blank with corresponding guess_letter
+            print(blank)
+            print('Tries : ',tries)
+            print(display_hangman(tries))
+        else:
+            tries=tries+1
+            print('Tries : ',tries)
+            print(display_hangman(tries))
+            
+            
+        
+
+    
+
+sabda = get_word()
+play(sabda)
+
+
+
+
+
+
+
+#7 final fail showed
+
+
+import random
+from words import word_list
+
+guess_list = []
+
+
+def display_hangman(tries):
+    stages = [  """
+                    -------------
+                    |           |
+                    |           O
+                    |          \ /
+                    |           |
+                    |          / L
+                    |
+                    """ ,
+                    """
+                    -------------
+                    |           |
+                    |           O
+                    |          \ /
+                    |           |
+                    |          / 
+                    |
+                    """,
+                    """
+                    -------------
+                    |           |
+                    |           O
+                    |          \ /
+                    |           |
+                    |          
+                    |
+                    """,
+                    """
+                    -------------
+                    |           |
+                    |           O
+                    |          \ /
+                    |           
+                    |          
+                    |
+                    """,
+                    """
+                    -------------
+                    |           |
+                    |           O
+                    |          \ 
+                    |           
+                    |          
+                    |
+                    """,
+                    """
+                    -------------
+                    |           |
+                    |           O
+                    |          
+                    |           
+                    |           
+                    |
+                    """,
+                    """
+                    -------------
+                    |           |
+                    |           
+                    |          
+                    |           
+                    |           
+                    |
+                    Game Over *********** Hanged Poor Man
+                    """
+             ]
+    return stages[tries]
+
+
+def get_word():
+    picked = random.choice(word_list) 
+    return picked.upper() 
+
+def play(picked):
+    blank = "_ "*len(picked)
+    print (blank)
+    print (picked)
+    print('\n')
+
+    for char in picked:
+        print(char)
+    
+    tries = 0
+    while tries<6:
+        guess_letter = input('Guess a word : ').upper()
+
+        guess_type = guess_letter.isalpha() #check if guess_letter is alphabet or not?
+        if guess_type == False:
+            print('Please Input Alphabets only !!!')
+            continue
+
+        if guess_letter in guess_list: #check if guess_letter is already inputed or not?
+            print('Already Guessed, Please guess another letter : ')
+            continue
+        guess_list.append(guess_letter)
+            
+
+        if guess_letter  in picked:
+            print('yes ',guess_letter)
+            import re
+            indxes = re.finditer(guess_letter, picked) # find all the index that consist of given guessed_letter
+            indxes_positions = [indx.start() for indx in indxes] # cast all index of given guessed_letter as list
+            for idx in indxes_positions:
+                blank = blank[:idx*2] + guess_letter + blank[idx*2+1:] #replace blank with corresponding guess_letter
+            print(blank)
+            print('Tries : ',tries)
+            print(display_hangman(tries))
+        else:
+            tries=tries+1
+            print(tries, ' Try !')
+            print('Opps...........',6-tries,' try left !')
+            print(display_hangman(tries))
+            
+            
+        
+
+    
+
+sabda = get_word()
+play(sabda)

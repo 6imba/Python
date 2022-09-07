@@ -1,0 +1,8 @@
+* change ipynb to py
+1.shift + right_click
+2.powershell
+3.pip install ipython
+4.pip install nbconvert
+5.ipython nbconvert --to script filename.ipynb
+
+

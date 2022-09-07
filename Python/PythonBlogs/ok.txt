@@ -1,0 +1,6 @@
+enumerate()
+slice operator [:]
+range()
+slice()
+split()
+map()

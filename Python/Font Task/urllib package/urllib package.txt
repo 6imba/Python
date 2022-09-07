@@ -1,0 +1,32 @@
+# Generally webpages are accessed via browser, but as a programmer we can access webpages via other ways to.
+    - let access webpages(sent http get request to web server) via IDE using python.
+    - then parse the response.
+    - this way we can write software to read websites for us.
+
+# In browser we access the webpage by search url in address bar.
+    - Uniform Resources Locator: protocol,host/scheme,port,path,query-string,hash/fragment.
+
+# Python3 comes with the package called urllib that simplify the task of building,loading and parseing url.
+    - extract webpage content via urllib.rqurest.
+
+# urllib package consist of 5 modules:
+    - request: request module is used to open urls
+    - response: (response module is used internally by request module.)
+    - error: error module consist of several error class for use by request module.
+    - parse: parse module has varieties of function for breaking up a URL into meaningful pieces(scheme,port,post,query,etc).
+    - robotparser: used to inspect robots.txt files.
+    # path  of urllib  package in window system: C:\Users\DELL\AppData\Local\Programs\Python\Python310\Lib\urllib
+
+# urllib.request module:
+
+
+
+- How to see the path/location of imported variable(module/package/library) in python?
+- import urllib, here urllib is a package holding the modules that do the actual work.
+
+
+
+
+# Reference:
+    - https://www.youtube.com/watch?v=LosIGgon_KM&t=98s
+

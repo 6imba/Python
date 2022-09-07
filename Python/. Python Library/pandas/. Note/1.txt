@@ -1,0 +1,11 @@
+- Pandas is a Python library used for working with data sets, used for analyzing, cleaning, exploring, and manipulating data.
+
+- Data set : A collection of data.
+
+- Data Science: A branch of computer science where we study how to store, use and analyze data for deriving information from it.
+
+- Pandas allows us to analyze big data and make conclusions based on statistical theories.
+- Pandas can clean messy data sets, and make them readable and relevant.
+- Relevant data is very important in data science.
+
+- 

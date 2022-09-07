@@ -1,0 +1,97 @@
+# 3
+fruits = ['apple','banana','coconut','orange','papaya']#list
+for fruit in fruits:
+    pass
+print(fruit)#list_item
+print(type(fruit))#list_item_type
+
+
+
+a=1
+fruits = ['apple','banana','coconut','orange','papaya']#list
+for fruit in fruits:
+     print(a)
+     a=a+1
+
+
+fruits ==> sequence[list]
+fruit  ==> iteration_variable
+a      ==> accumulator
+
+iteration is process of looping
+iterable ?
+iterator ?
+iterate ?
+
+
+A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string). With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc
+
+
+
+Looping Through a String
+The break Statement
+The continue Statement
+The range() Function
+Else in For Loop
+Nested Loops
+The pass Statement
+
+
+The else keyword in a for loop specifies a block of code to be executed when the loop is finished:
+for x in range(6):
+  print(x)
+else:
+  print("Finally finished!")
+
+Note: The else block will NOT be executed if the loop is stopped by a break statement.
+for x in range(6):
+  if x == 3: break
+  print(x)
+else:
+  print("Finally finished!")
+
+
+
+
+Extra :
+In python :
+for x in range(1,11):
+  print(x) 
+print(x)
+
+Output:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+10
+
+
+
+In C :
+// Print numbers from 1 to 10
+#include <stdio.h>
+
+void main() {
+  int i;
+
+  for (i = 1; i < 11; ++i)
+  {
+    printf("%d ", i);
+  }
+  printf("%d ", i);
+}
+Output:
+1 2 3 4 5 6 7 8 9 10 Out of loop : 11
+
+
+
+Python list | index()
+
+

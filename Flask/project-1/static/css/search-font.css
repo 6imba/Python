@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.header{
+    margin:10px;
+    font-size: 40px;
+}
+.url-search{
+    background:#EEEEEE;
+    display:flex;
+    justify-content: center;
+}
+.inputfield-head{
+    font-size: 25px;
+}
+.inputbox{
+    padding:5px;
+    padding-left:9px;
+    margin:5px;
+    margin-left:10px;
+    width:400px;
+    border: 2px solid black;
+    border-radius: 120px;
+}

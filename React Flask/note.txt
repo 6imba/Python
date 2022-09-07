@@ -1,0 +1,9 @@
+# setup backend environment:
+    > type nul > server.py
+    > py -m venv virenv
+    > Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
+    > .\virenv\Scripts\activate
+    > pip install flask
+
+# setup backend api:
+    > setup flask app in server.py file.

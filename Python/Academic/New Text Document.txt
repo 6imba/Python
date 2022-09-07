@@ -1,0 +1,7 @@
+Lists, tuples, and strings have been called sequences, because their items occur in order. The dictionary is the first compound type that we've seen that is not a sequence, so we can't index or slice a dictionary.
+
+
+
+sequence => list, tuples, string
+mutable_sequence  = list
+immutable_sequence   = tuples, string

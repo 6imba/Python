@@ -1,0 +1,13 @@
+class A:
+    pass
+obj1=A()
+print(obj1)
+print(A)
+print(A())
+
+
+
+Output :
+<__main__.A object at 0x0000019F9D1E6D30>
+<class '__main__.A'>
+<__main__.A object at 0x0000019F9D1E6DC0>

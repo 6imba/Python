@@ -1,0 +1,50 @@
+# 1. What is a CSV:
+    - CSV stands for “Comma Separated Values.”
+    - It is the simplest file format for storing tabular_data(such as a spreadsheet or database) as in plain_text with .csv extension.
+    - Each line of the file is a data record.
+    - Each record consists of one or more fields, separated by commas.
+
+
+
+
+# 2. So why do we need csv file ?
+    - CSV files are used in data exchange.
+        - Data exchange from excel file to database file.
+        - Like, if I have a excel_worksheet and i want to send all the data from that excel_worksheet to the database_software.
+        - Directly exchange of data is not possible because database_software doesn't accepts excel_file so we use csv formate.
+        - So first we need to convert excel_file(.xlsx) into CSB_file(.csv) & then send this CSV_file(.csv) to database_software(MySQL, openOffice calc).
+    - It is important to know to work with CSV because we mostly rely on CSV data in our day-to-day lives as data scientists.
+
+
+
+# 3. Ways to create CSV file from excel_file|database_table_file:
+
+
+
+# 4. Structure of CSV:
+        Id, Name, Age   #(Header)
+        1, Amir, 22     #(Observations/records)
+        2, Lina, 12     #(Observations/records)
+        3, Homo, 100    #(Observations/records)
+
+
+
+# 5. Ways for Handling CSV file:
+    - using python file handling/inbulit open method/ file_object. (open())
+    - using python local/inbulit module call csv. (import csv)
+    - using python external module call pandas. (1. pip install pandas, 2.import pandas)
+
+
+
+# 6. Manipulating csv-data.
+    - Read
+    - Write
+    - 
+
+
+
+# Reference:
+    - https://realpython.com/python-csv/
+    - https://www.programiz.com/python-programming/reading-csv-files
+    - https://www.pythontutorial.net/python-basics/python-write-csv-file/
+    - https://www.youtube.com/watch?v=X5hqPorm_lw

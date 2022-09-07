@@ -1,0 +1,20 @@
+# typeface & fonts ~ style of a letter:
+    > typeface(style of a letter): Calibri,Arial,Memes,...
+    > fonts(size of a letter): variation,italic,blod,...
+
+# Bit_map_retro_pixel font needed low processing.
+# Vector_font needs high processing.
+
+# Vector_font needs high processing:
+    - TypeType,OpenType
+    - accurate scaling on monitors,printer,etc.
+
+# Reference:
+    - https://www.youtube.com/watch?v=l2iNthl-RUk
+
+------------------------------------------------------------------------------------------------------------------------
+
+# font rendering
+# read font_file(.ttf,otf)
+# a font file contains a bunch of information divided into a tables.
+

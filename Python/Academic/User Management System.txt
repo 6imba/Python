@@ -1,0 +1,101 @@
+User Management System
+
+3 Modules
+ - User Module
+ - Role Module
+ - Permissions Module
+
+ MVC Framework
+ - model
+ - view 
+ - controller
+
+Users
+----------------------
+User Model
+  - Database query
+  - Database connection, operations
+
+User View
+  - Front end interface(eg. View User table, Edit User, Update user, Add user, Delete user .... interface)
+
+User Controller
+  - first receives user controller
+  - passes the event to model
+
+Roles
+-----------------------
+
+
+
+user_Role
+-----------------------
+Relationship 
+
+----------------------------------------------------------------------------------------
+Implenatation
+----------------------------------------------------------------------------------------
+Class User_Model(Model):
+	
+	__init__():
+		user_id
+
+	create():
+		username = 
+		email = 
+		password
+		full name
+		alterative
+
+	database_fake():
+		-> dictionary return of user -> user_dictionary
+
+	add user query
+	udpate user query
+	delete user query
+	retrive user query
+
+Class User_Controller()
+	def __init__():
+		pass
+
+	def AddUser():
+		pass
+
+	def UpdateUser():
+		pass
+
+	def DeleteUser():
+		pass
+
+	def RetrieveUser():
+		pass
+
+
+
+Front end (web or software)
+	HTML, Python, CSS, JS
+
+	#pandas library
+
+	import pandas as pd
+
+	user_dictionary = {}
+	user_table = pd.DataFrame(user_dictionary)
+
+
+	dictionary = on_submit(Controller.add_user)
+	user_table = pd.DataFrame(dictionary)
+
+	print(user_table)
+
+menus
+================
+
+if else 
+------------------------
+
+
+
+
+Input("Enter the username")

@@ -1,0 +1,219 @@
+install python ==> location : C:\Python3.9.4\python.exe
+pip is also installed automatically ==> location : C:\Python3.9.4\Scripts\pip.exe
+
+this is automatically done when we check add environament variable option while python installation time {
+Add path in system variable(environmental variable) ,at top ==>
+C:\Python3.9.4\Scripts\
+C:\Python3.9.4\
+}
+
+python and pip version:
+cmd : python --version
+cmd : pip --version
+
+upgrade pip :
+cmd : python -m pip install --upgrade pip
+
+Then install django
+cmd : python -m pip install Django
+cmd : python -m django --version
+
+upgrade django:
+pip install django --upgrade
+
+Untill now 5/1/2021, here i have ==> 
+python : 3.9.4
+pip : 21.1.1
+django :3.2
+
+
+
+Now Create Project/project_folder using Pychar IDE:
+1.> In pycharm create new project and give it name as myProject
+i.e : C:\Users\SimbA\PycharmProjects\myProject
+
+Note : not to check New environment. do check existing or previously configured interperter and select python 3.9
+By default pycharm save its project in C:\Users\SimbA\PycharmProjects\ directory
+
+Now use Django framework:
+open terminal and cd to project_folder i.e myProject
+# C:\Users\SimbA\PycharmProjects\myProject>
+
+way to do currently you are in :
+C:\Users\SimbA>
+type cd Py
+and press tab
+it will give
+C:\Users\SimbA>cd PycharmProjects
+again type
+\myProject
+enter
+finally
+C:\Users\SimbA\PycharmProjects\myProject>
+now see the dir inside myProject folder
+
+#
+C:\Users\SimbA\PycharmProjects\myProject>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 1417-346A
+
+ Directory of C:\Users\SimbA\PycharmProjects\myProject
+
+05/01/2021  04:56 PM    <DIR>          .
+05/01/2021  04:56 PM    <DIR>          ..
+05/01/2021  05:03 PM    <DIR>          .idea
+               0 File(s)              0 bytes
+               3 Dir(s)  86,709,075,968 bytes free
+
+
+Now its time to create danngo,
+cmd : django-admin
+django-admin is the utility that gives the list of sub command of django
+
+#
+C:\Users\SimbA\PycharmProjects\myProject>django-admin
+
+Type 'django-admin help <subcommand>' for help on a specific subcommand.
+
+Available subcommands:
+
+[django]
+    check
+    compilemessages
+    createcachetable
+    dbshell
+    diffsettings
+    dumpdata
+    flush
+    inspectdb
+    loaddata
+    makemessages
+    makemigrations
+    migrate
+    runserver
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+Note that only Django core commands are listed as settings are not properly configured (error: Requested setting INSTALLED_APPS, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.).
+
+
+#
+Finally,
+Now finally create Django project using command/utility(django-admin), sub_command_of_django(startproject) and project_name(myBook):
+NOte : Never give project_name same as built_in_module_name
+cmd : django-admin startproject myBook
+C:\Users\SimbA\PycharmProjects\myProject>django-admin startproject myBook
+Now see inside C:\Users\SimbA\PycharmProjects\myProject folder new project naed as myBook is created.
+
+Now cd inside myBook project folder:
+C:\Users\SimbA\PycharmProjects\myProject>cd myBook
+gives,
+C:\Users\SimbA\PycharmProjects\myProject\myBook>
+
+
+Now see the directory inside myBook project folder:
+
+C:\Users\SimbA\PycharmProjects\myProject\myBook>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 1417-346A
+
+ Directory of C:\Users\SimbA\PycharmProjects\myProject\myBook
+
+05/01/2021  05:06 PM    <DIR>          .
+05/01/2021  05:06 PM    <DIR>          ..
+05/01/2021  05:06 PM               684 manage.py
+05/01/2021  05:06 PM    <DIR>          myBook
+               1 File(s)            684 bytes
+               3 Dir(s)  86,707,916,800 bytes free
+
+
+
+
+
+
+Now When you see inside Pycharm you see :
+main_project_folder:
+myProject
+	Sub_folder:
+	1).idea
+	2)myBook // outer directory its jus a name of project, you can even change it
+		inside myBook:
+		1)myBook // name of our django project, main folder for coding project, what ever we import we use this project_folder name i.e : from myBook, This the python package with whom we aill be working.// see about python package in codewithharry
+			inside_myBook:
+			# __init__.py, asgi.py, setting.py, urls.py, wsgi.py
+
+		2)manage.py // commandline utility that helps to interact with our django project
+
+
+
+#
+C:\Users\SimbA\PycharmProjects\myProject\myBook>cd myBook
+
+C:\Users\SimbA\PycharmProjects\myProject\myBook\myBook>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 1417-346A
+
+ Directory of C:\Users\SimbA\PycharmProjects\myProject\myBook\myBook
+
+05/01/2021  05:06 PM    <DIR>          .
+05/01/2021  05:06 PM    <DIR>          ..
+05/01/2021  05:06 PM               405 asgi.py
+05/01/2021  05:06 PM             3,362 settings.py
+05/01/2021  05:06 PM               769 urls.py
+05/01/2021  05:06 PM               405 wsgi.py
+05/01/2021  05:06 PM                 0 __init__.py
+               5 File(s)          4,941 bytes
+               2 Dir(s)  86,705,545,216 bytes free
+
+C:\Users\SimbA\PycharmProjects\myProject\myBook\myBook>
+
+
+
+
+now C:\Users\SimbA\PycharmProjects\myProject\myBook\myBook>cd ..
+C:\Users\SimbA\PycharmProjects\myProject\myBook>
+
+
+
+Finally Up your project :
+Using manage.py make server up,
+cmd : python manage.py runserver  ==> this command will run/start a server, start your django website
+Note inoder to run python manage.py runserver command you have to be inside the root folder wherer manage.py is located
+i.e ==>  C:\Users\SimbA\PycharmProjects\myProject\myBook>
+
+
+#	
+C:\Users\SimbA\PycharmProjects\myProject\myBook>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+May 01, 2021 - 17:29:26
+Django version 3.2, using settings 'myBook.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+#
+This means that we have started development server
+Now copy http://127.0.0.1:8000/ and paste in our browerser.
+
+
+So Finally your first Django website is ready.
+
+
+#
+Quit the server with CTRL-BREAK.
+In dell we dont have BREAK  so alternative of CTRL-BREAK is Ctrl+Fn+S .
+Now reload the browser http://127.0.0.1:8000/ it wont show django webpage as we have Quit the server
+

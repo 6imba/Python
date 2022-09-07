@@ -1,0 +1,40 @@
+Pass or Call by Object Reference in Python
+
+int is inbulit python_class
+
+In main 
+x=5 , x_variable is object of inbulit_python_class called int
+y=5 , y_variable is object of inbulit_python_class called int
+
+pass Object Reference in function:
+edit variable in function creates new object
+
+
+
+mutable and immutable objects in python
+
+
+
+
+Python function vs method:
+function is in main module
+method is inside class and required self as first parameter.
+
+
+
+
+
+
+
+Variable Length Argument
+
+Super in python with its parameter
+
+__init__ is one of the reserved methods in Python. In object oriented programming, it is known as a constructor. The __init__ method can be called when an object is created from the class, and access is required to initialize the attributes of the class.
+
+
+global variable ( inside module/main module )
+class property or class attributes (inside class)
+instance property or class attributes (inside reserved __init__ method)
+
+

@@ -1,0 +1,7 @@
+1.
+__name__
+
+def add:
+    return 2+3
+
+print(add.__name__) ==> add

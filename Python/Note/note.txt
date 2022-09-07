@@ -1,0 +1,84 @@
+#1
+charac = 'a'
+print(type(charac))
+charac = a
+#No. Python does not have a character or char type. All single characters are strings with length one.
+
+
+#2
+lists = [   """
+            1
+            2
+            """,
+            """
+            3
+            4
+            """,
+            """
+            5
+            6
+            """,
+            """
+            7
+            8
+            """
+]
+print(lists)
+print(lists[0])
+
+
+
+
+#2 Boolean and Loop
+# #1
+# boolean = False
+# while not boolean:
+#     print(0)
+
+# #2
+# while True :
+#     print(0)
+
+# #3
+# while False : #by default always True
+#     print(0)
+
+# #4
+# boolean = True
+# while not boolean:
+#     print(0)
+
+
+
+
+
+#3
+#string join
+
+blanked_as_list = ['amir','samir','ram','sita']
+word_complition = "".join(blanked_as_list)
+print(word_complition)
+print("".join(['_','c','a','_','t']))
+
+
+
+
+#4
+__str__ is the string representation of an object
+class Book:
+    def __init__(self,title,author):
+        self.title = title
+        self.author=author
+        
+    def __str__(self):
+        return '{} by {}.'.format(self.title,self.author)
+        
+    def obj(self):
+        return Book(1,2)
+
+mybook = Book('Jiban Katha','Sakhyamuni')
+print(mybook)
+obj1 = mybook.obj()
+print(obj1)
+
+# 3 and 4 is same && 1 and 2 is same

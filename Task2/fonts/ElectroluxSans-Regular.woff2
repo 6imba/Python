@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+    <meta name="viewport" content="width=device-width"/>
+    <title>Electrolux</title>
+    <!-- injector:css -->
+    <link rel="stylesheet" href="bundle/main.min.css">
+    <!-- endinjector -->
+    <!-- injector:js -->
+    <script src="bundle/main.min.js"></script>
+    <!-- endinjector -->
+	<link rel="icon" href="/resource/logotype/favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="/resource/logotype/favicon.ico" type="image/x-icon"/><!-- Global site tag (gtag.js) - Google Analytics ADDED SEPT 17 2021 LORENZO --><script async src="https://www.googletagmanager.com/gtag/js?id=G-R02VLQ3NNS"></script><script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'G-R02VLQ3NNS');  gtag('config', 'UA-192421938-1');</script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="semantic-purpose">Electrolux</h1>
+        <img class="site-logotype" src="resource/logotype/electrolux-logo.svg" alt="Electrolux">
+    </header>
+    <section class="content" role="main">
+        <div class="content__left">
+            <div class="language-selector">
+                <h1 class="language-selector__title">
+                    <strong>Electrolux</strong> country selection
+                </h1>
+
+                <p class="language-selector__info">
+                    Please select a country to continue to the corresponding website
+                    for products, customer support and store locator
+                </p>
+
+                <nav>
+                    <select title="Language selector" class="language-selector__select">
+                        <option value="">Choose a country...</option>
+                        <option value="https://www.electrolux.al/">Albania</option>
+                        <option value="https://www.electrolux.dz/">Algeria</option>
+                        <option value="https://www.electrolux.com.ar/">Argentina</option>
+                        <option value="https://www.electrolux.com.au/">Australia</option>
+                        <option value="https://www.electrolux.at/">Austria</option>
+                        <option value="https://www.electrolux.be/">Belgium</option>
+			<option value="https://www.electrolux.com.bo/">Bolivia</option>
+                        <option value="https://www.electrolux.com.br/">Brazil</option>
+                        <option value="https://www.electrolux.bg/">Bulgaria</option>
+                        <option value="https://www.electrolux.ca/en/?utm_source=Redirect&utm_medium=Link&utm_campaign=country.electrolux.com">Canada</option>
+                        <option value="https://www.electrolux.cl/">Chile</option>
+                        <option value="https://www.electrolux.com.cn/">China</option>
+                        <option value="https://www.electrolux.com.co/">Colombia</option>
+			<option value="https://www.electrolux.cr/">Costa Rica</option>
+                        <option value="https://www.electrolux.hr/">Croatia</option>
+                        <option value="https://www.electrolux.cz/">Czech Republic</option>
+                        <option value="https://www.electrolux.dk/">Denmark</option>
+                        <option value="https://www.electrolux.com.ec">Ecuador</option>
+                        <option value="https://www.electrolux.ee/">Estonia</option>
+                        <option value="https://www.electrolux.fi/">Finland</option>
+                        <option value="https://www.electrolux.fr/">France</option>
+                        <option value="https://www.electrolux.de/">Germany</option>
+                        <option value="https://www.electrolux.gr/">Greece</option>
+			<option value="https://www.electrolux.gt/">Guatemala</option>
+                        <option value="https://www.electrolux.com.hk/">Hong Kong</option>
+                        <option value="https://www.electrolux.hu/">Hungary</option>
+                        <option value="https://www.electrolux.in/">India</option>
+                        <option value="https://www.electrolux.co.id/">Indonesia</option>
+                        <option value="https://www.electrolux.co.il/">Israel</option>
+                        <option value="https://www.electrolux.it/">Italy</option>
+                        <option value="https://www.electrolux.co.jp/">Japan</option>
+			<option value="https://electroluxarabia.com/">Jordan</option>
+                        <option value="https://www.electrolux.co.kr/">Korea</option>
+			<option value="https://electroluxarabia.com/">Kuwait</option>
+                        <option value="https://www.electrolux.lv/">Latvia</option>
+			<option value="https://electroluxarabia.com/">Lebanon</option>
+                        <option value="https://www.electrolux.lt/">Lithuania</option>
+                        <option value="https://www.electrolux.lu/">Luxembourg</option>
+                        <option value="https://www.electrolux.com.my/">Malaysia</option>
+			<option value="https://www.electrolux.com.mx/">Mexico</option>
+                        <option value="https://www.electrolux.ma/">Morocco</option>
+                        <option value="https://www.electrolux.nl/">Netherlands</option>
+                        <option value="https://www.electrolux.co.nz/">New Zealand</option>
+                        <option value="https://www.electrolux.no/">Norway</option>
+			<option value="https://electroluxarabia.com/">Oman</option>
+			<option value="https://www.electrolux.com.py/">Paraguay</option>
+                        <option value="https://www.electrolux.com.pe/">Peru</option>
+                        <option value="https://www.electrolux.com.ph/">Philippines</option>
+                        <option value="https://www.electrolux.pl/">Poland</option>
+                        <option value="https://www.electrolux.pt/">Portugal</option>
+			<option value="https://electroluxarabia.com/">Qatar</option>
+                        <option value="https://www.electrolux.ro/">Romania</option>
+                        <option value="https://www.electrolux.ru/">Russia</option>
+                        <option value="https://electroluxarabia.com/">Saudi Arabia</option>
+                        <option value="https://www.electrolux.rs/">Serbia</option>
+                        <option value="https://www.electrolux.com.sg/">Singapore</option>
+                        <option value="https://www.electrolux.sk/">Slovakia</option>
+                        <option value="https://www.electrolux.si/">Slovenia</option>
+                        <option value="https://www.electrolux.co.za/">South Africa</option>
+                        <option value="https://www.electrolux.es/">Spain</option>
+                        <option value="https://www.electrolux.se/">Sweden</option>
+                        <option value="https://www.electrolux.ch/">Switzerland</option>
+                        <option value="https://www.electrolux.com.tw/">Taiwan</option>
+                        <option value="https://www.electrolux.co.th/">Thailand</option>
+                        <option value="https://www.electrolux.com.tr/">Turkey</option>
+                        <option value="https://www.electrolux.ua/">Ukraine</option>
+                        <option value="https://electroluxarabia.com/">United Arab Emirates</option>
+                        <option value="https://www.electrolux.co.uk/">United Kingdom</option>
+                        <option value="https://www.electrolux.com/en/?utm_source=Redirect&utm_medium=Link&utm_campaign=country.electrolux.com">United States</option>
+			<option value="https://www.electrolux.com.uy/">Urugauy</option>
+                        <option value="https://www.electrolux.com.ve/">Venezuela</option>
+                        <option value="https://www.electrolux.vn/">Vietnam</option>
+                    </select>
+                </nav>
+            </div>
+
+            <ul class="alt-route">
+                <li class="alt-route__leaf">
+                    <a class="alt-route__link" href="https://www.electroluxgroup.com/en/">
+                        <h2 class="alt-route__header">Company information</h2>
+                        <p class="alt-route__paragraph">
+                            Find out more about the Electrolux Group including financial
+                            information and latest news from Electrolux around the world.
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

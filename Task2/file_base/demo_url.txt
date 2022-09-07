@@ -1,0 +1,4 @@
+https://fast.fonts.net/FontsCom/Live/static/2.15.911.0/font/ss-pika.woff
+https://static-webfonts.myfonts.com/kit/RooneySans_normal_normal/font.woff2
+https://www.swinton.co.uk/ResourcePackages/Swinton/assets/fonts/4cadb55f-822a-4a35-8918-becfc5a866a3.woff2
+https://www.electrolux.com/,https://www.electrolux.com/assets/fonts/ElectroluxSans-Regular.woff2

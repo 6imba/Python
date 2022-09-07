@@ -1,0 +1,74 @@
+https://realpython.com/inner-functions-what-are-they-good-for/
+https://www.datacamp.com/community/tutorials/decorators-python
+https://www.programiz.com/python-programming/decorator
+https://www.geeksforgeeks.org/decorators-in-python/
+https://www.youtube.com/watch?v=r7Dtus7N4pI&t=112s
+
+
+kite ?
+
+
+
+A decorator takes in a function, adds some functionality and returns it
+
+
+# Passing the function as an argument/ assign function in variable
+# Passing the function as an argument
+# Returning functions from another functions.
+# inner function or nested function are used along with decoretor
+
+
+
+master_Function(old_function){
+    new_function{
+        old_function + new_features
+    }
+}
+
+
+decoretor_Function(extendable_function){
+    inner_function{
+        extendable_function + new_features
+    }
+}
+
+decoretor_Function(extendable_function){
+    wrapper_function{
+        extendable_function + new_features
+    }
+}
+
+
+
+
+A decorator takes in a function, adds some functionality and returns it.
+So how to create decoretor and why you should use them.
+
+A decorator is a design pattern in Python that allows a user to add new functionality to an existing object without modifying its structure. Decorators are usually called before the definition of a function you want to decorate. I
+Functions in Python are first class citizens.
+
+decoretor_Function, function_to_be_decoraed, inner_function
+
+
+
+Everything in python is an object, including class and function. Here variables are the identifiers bound to these objects.
+
+
+
+@decorator means, we are passing the function_to_be_decorated into decorator_function and re-assigning the function_to_be_decorated to returned_funtion_by_decorator_function/inline_function/wrapper_function
+
+@decorator are the way to change or modify the behaviour of any of your function/method without changing any of the code in it.
+They are extremly powerful and have different use-cases
+
+# @decorator_function
+# def function_to_be_decorated:
+# adding @decorator_function (symbol + decorator_function_name) before function_to_be_decorated means, we are passing the function_to_be_decorated into decorator_function and re-assigning the function_to_be_decorated to returned_funtion_by_decorator_function/inline_function/wrapper_function
+
+
+As we can see that adding the @ symbol is a sweeter way than creating a new variable to do same thing( to store returned_value from decorator function).
+It makes our code much cleaner as we dont need to assign decorator function into new variable
+
+inner_function will replace our original function
+
+
+@decorator for function with parameters

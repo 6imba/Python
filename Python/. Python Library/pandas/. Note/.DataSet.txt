@@ -1,0 +1,33 @@
+- set: A set is a collection of elements or numbers or objects.
+- data: Data are individual facts, statistics, or items of information, often numeric.
+- dataset: A data set is a collection of data.
+
+# DataSet:
+    - A data set is a collection of data.
+    - In the case of tabular data, a data set corresponds to one or more database tables.
+    - where every column of a table represents a particular variable.
+    - each row corresponds to a given record of the data set.
+
+    - dataset: a collection of related sets of information that is composed of separate elements but can be manipulated as a unit by a computer.
+
+    - A data set is a collection of numbers or values that relate to a particular subject.
+    - For example, the test scores of each student in a particular class is a data set.
+    - The number of fish eaten by each dolphin at an aquarium is a data set.
+
+    - Simply, incase of databsae single table is dataset.
+
+    - The term data set refers to a file that contains one or more records.
+
+    - dataset: dictionary, list
+
+# DataSet vs DataFrame:
+    - DataSet:
+    {'cars': ['BMW', 'Volvo', 'Ford'], 'passings': [3, 7, 2]}
+
+    - DataFrame:
+        cars  passings
+    0    BMW         3
+    1  Volvo         7
+    2   Ford         2
+
+#

@@ -1,0 +1,3 @@
+code ==> https://medium.com/@anthonytapias/build-a-deck-of-cards-with-oo-python-c41913a744d3
+
+Fisher Yates shuffle ==> https://www.youtube.com/watch?v=tLxBwSL3lPQ

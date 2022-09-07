@@ -1,0 +1,207 @@
+print("Yes") if 5 > 2 else print("No")
+
+if 5 > 2:
+  print("Yes")
+else
+  print("No")
+
+
+
+
+i = 1
+while i < 6:
+  if i == 3:
+    
+break
+
+  i += 1
+
+
+
+Print a message once the condition is false.
+
+
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+else:
+
+  print("i is no longer less than 6")
+
+
+
+If you do not know the number of arguments that will be passed into your function, there is a prefix you can add in the function definition, which prefix?
+
+
+def my_function(
+*
+kids):
+  print("The youngest child is " + kids[2])
+
+
+
+
+
+
+
+
+
+
+If you do not know the number of keyword arguments that will be passed into your function, there is a prefix you can add in the function definition, which prefix?
+
+
+def my_function(
+**
+kid):
+  print("His last name is " + kid["lname"])
+
+
+
+
+
+
+Create a lambda function that takes one parameter (a) and returns it.
+
+
+x = lambda a:a
+
+
+Create an object of MyClass called p1:
+
+
+class MyClass:
+  x = 5
+
+p1
+ = 
+MyClass()
+
+
+
+
+
+We have used the Student class to create an object named x.
+
+What is the correct syntax to execute the printname method of the object x?
+
+
+class Person:
+  def __init__(self, fname):
+    self.firstname = fname
+
+  def printname(self):
+    print(self.firstname)
+
+class Student(Person):
+  pass
+
+x = Student("Mike")
+x.printname()
+
+
+
+
+
+
+What is the correct syntax to import a module named "mymodule"?
+
+
+import
+ mymodule
+
+
+
+
+
+
+
+
+
+
+
+If you want to refer to a module by using a different name, you can create an alias.
+
+What is the correct syntax for creating an alias for a module?
+
+
+import mymodule 
+as
+ mx
+
+
+
+
+
+
+
+
+
+
+
+
+What is the correct syntax of printing all variables and function names of the "mymodule" module?
+
+
+import mymodule
+
+print(
+dir(mymodule)
+)
+
+
+
+
+
+What is the correct syntax of importing only the person1 dictionary of the "mymodule" module?
+
+
+from
+ mymodule 
+import
+ person1
+
+
+
+print(end='*') == print('*',end='')
+print(end=' ') == print(' ',end='')
+
+
+
+
+
+
+
+# # Extra
+# print(2>1)
+# print(3>5)
+# print(2>1 or 3>5)
+# print(2>1 and 3>5)
+# print(0!=0)
+# print(0!=5)
+# print(0!=0 or 0!=5)
+# print(0!=0 and 0!=5)
+# print(2>1 and 3>5 or 0!=0 or 0!=5)
+# print(2>1 and 3>5 or (0!=0 or 0!=5))
+# print(2>1 and 3>5 and (0!=0 or 0!=5))
+# print(2>1 and 3>5 and 0!=0 or 0!=5)
+# print(2>1 and 3>5 and 0!=0 and 0!=5)
+
+
+Output :
+True
+False
+True
+False
+False
+True
+True
+False
+True
+True
+False
+True
+False
+
+
+

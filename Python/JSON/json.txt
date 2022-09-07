@@ -1,0 +1,72 @@
+/*
+    A grammar for JSON data-interchange format.
+    See: http://www.json.org/
+*/
+File:
+    Array | Object
+;
+
+Array:
+    "[" values*=Value[','] "]"
+;
+
+Value:
+    STRING | FLOAT | BOOL | Object | Array | "null"
+;
+
+Object:
+    "{" members*=Member[','] "}"
+;
+
+Member:
+    key=STRING ':' value=Value
+;
+
+
+
+
+
+
+# note too see typ ein js 
+console.log(typeof 42);
+
+
+
+
+var myObj = { name: "John", age: 31, city: "New York" };
+var myJSON = JSON.stringify(myObj);
+console.log(typeof myObj); ===> object
+console.log(typeof myJSON); ===> string
+
+
+
+
+
+
+
+
+
+JSON data is written as name/value pairs.
+A name/value pair consists of a field name (in double quotes), followed by a colon, followed by a value:
+JSON syntax is not Python syntax. JSON requires double quotes for its strings.
+
+This:
+
+{
+    'http://example.org/about': {
+        'http://purl.org/dc/terms/title': [
+            {'type': 'literal', 'value': "Anna's Homepage"}
+        ]
+     }
+}
+is not JSON.
+This:
+
+{
+     "http://example.org/about": {
+         "http://purl.org/dc/terms/title": [
+             {"type": "literal", "value": "Anna's Homepage"}
+          ]
+      }
+}
+is JSON.

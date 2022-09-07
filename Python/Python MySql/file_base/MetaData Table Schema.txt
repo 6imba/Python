@@ -1,0 +1,40 @@
+# TableName: MetaData
+    # Fields:
+        MetaDadaID
+        CopyRight
+        Family(16/1)
+        SubFamily(17/2)
+        VersionOfNameTable
+        FullName
+        PostScriptName
+        TrademarkNotice
+        ManufacturerName
+        DesignerName
+        Description
+        VendorUrl
+        DesignerUrl
+        LicenseDescription
+        LicenseUrl
+
+# Fields DataType and Constraint:
+    > Filed:                DataType                Constraint                          Index
+    > MetaDataID:           int                     PRIMARY KEY, AUTO_INCREMENT         
+    > CopyRight             LONGTEXT                                                    0
+    > Family                varchar                                                     16/1
+    > SubFamily             varchar                                                     17/2
+    > VersionOfNameTable    varchar                                                     5            
+    > FullName              varchar                                                     4------
+    > PostScriptName        LONGTEXT                                                    6
+    > TrademarkNotice       LONGTEXT                                                    7
+    > ManufacturerName      varchar                                                     8
+    > DesignerName          varchar                                                     9------
+    > Description           LONGTEXT                                                    10
+    > VendorUrl             LONGTEXT                                                    11
+    > DesignerUrl           LONGTEXT                                                    12
+    > LicenseDescription    LONGTEXT                                                    13
+    > LicenseUrl            LONGTEXT                                                    14
+
+
+    # SQL:
+
+    "CREATE TABLE if not exists fontdetail (MetaDataID int, FullName varchar(255), DesignerName varchar(255));"

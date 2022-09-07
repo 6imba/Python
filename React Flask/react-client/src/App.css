@@ -1,0 +1,31 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  background: #FFFFFF
+}
+.header{
+  margin:10px;
+  font-size: 40px;
+}
+.font-detial{
+  margin-top:30px;
+  padding-top:20px;
+  padding-bottom:30px;
+  background:#EEEEEE;
+}
+.font-detial-head{
+  margin-left:50px;
+  font-size: 30px;
+}
+.font-detial-body{
+  margin-top:10px;
+  margin-left:100px;
+}
+.font-detial-body h4 span{
+  margin-bottom:5px;
+  text-decoration: none;
+  font-weight: 400;
+}

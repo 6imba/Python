@@ -1,0 +1,38 @@
+- try,except,else,finally,raise
+
+# generally three type of error:
+    1. compile time error => syntax error
+    2. logical error => unexpected error add(2+3) gives 6
+    3. run time error => wrong input i.e 6/0
+
+> normal statement and critical statement.
+> declaration statement and control flow statement .
+
+# expression vs statement vs block. 
+
+# Three basic types of logic, or flow of control:
+    > Sequence logic, or sequential flow
+    > Selection logic, or conditional flow
+    > Iteration logic, or repetitive flow
+
+# Exception type:
+    - Exception
+    - TypeError
+    - NameError
+    - ZeroDivisionError
+    - KeyboardInterrupt
+    - MemoryError
+    - StopIteration
+    - AttributeError
+    - RuntimeError
+    - ValueError
+    - OSError 
+    - BaseException 
+    - ConnectionError
+    - KeyboardInterrupt
+    
+import sys
+Unable to initialize device PRN
+To fix it, I just needed to add the Python installation path to my PATH environment variable.
+Short for PRiNter, PRN is the name MS-DOS assigns to the first parallel port. 
+

@@ -1,0 +1,8 @@
+import pandas as pd
+read_file = pd.read_excel (r'./excel.xlsx')
+# print(read_file) # DataFrame in pandas ~ Tabular 2D data represenattion ~ excel spread sheet
+# read_file.to_csv (r'./fontLink.csv', index = None)
+# read_file.to_csv (r'./fontLink.csv', index = None, header=True)
+read_file.to_csv (r'./fontLink.csv', index = None, header=False)
+
+

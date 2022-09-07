@@ -1,0 +1,8 @@
+1)
+Add .py extension in xammp
+> Open xampp
+> Click on Config of Apache
+> Click on Apacche(httpd.conf)
+> Now notepad will open , press ctrl + F , finder will open
+> Type/Search for Addhandler
+> AddHandler cgi-script .cgi .pl .asp .py  --> will appear --> .py should be here if no add it and save

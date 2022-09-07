@@ -1,0 +1,26 @@
+Driver Code
+Code Snipits
+Use Case
+Optimal Case
+Constraint
+Accumulation
+List Comprehensive
+garbage collector
+
+
+append VS +
+
+a.append() VS a+=b VS a=a+b
+a+=b # id of a is same 
+a=a+b # new id for a
+
++ VS ,
+
+format VS +
++ ==> casting needed(datatype-string)
+formate ==> casting not needed(any-datatype)
+
+
+is VS = VS ==
+
+appedn,sort,reverse returns None

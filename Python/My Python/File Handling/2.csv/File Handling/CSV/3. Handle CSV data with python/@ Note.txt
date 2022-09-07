@@ -1,0 +1,11 @@
+open():         <_io.TextIOWrapper name='./CSV_file_with_CSV_data.csv' mode='r' encoding='cp1252'>
+csv:            <module 'csv' from 'C:\\Python3.9.4\\lib\\csv.py'>
+csv.reader():   <_csv.reader object at 0x0000027967812820>
+csv.writer():   <_csv.writer object at 0x00000160BA40BA40>
+
+
+1. In python File_Handling:
+    - looping file_object returns records as string.
+
+2. In python core csv module:
+    - looping reader_object returns records as list.

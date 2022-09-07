@@ -1,0 +1,18 @@
+Generetor in python
+
+
+
+
+forloop.counter
+for i n range (5,9): ==> loopcounter=4
+
+forloop.last
+
+
+
+what is | operand in django?
+
+staticmethod()
+defaultdict in python
+with keyword to open file in p[ython
+abstract class in python

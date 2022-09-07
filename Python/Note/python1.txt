@@ -1,0 +1,49 @@
+
+
+x = y = z = "Orange"
+
+print(x)
+print(y)
+print(z)
+z='a'
+print(x)
+print(y)
+print(z)
+
+
+
+
+
+
+
+e = ??? power 10 math????
+class A(object) ===>> ???
+inbuilt module???
+inbuilt function ???
+
+z = str(float(3))
+
+print(z)
+
+
+
+
+age = 36
+txt = "My name is John, I am " + age
+print(txt) 
+
+
+age = 36
+txt = "My name is John, I am " , age
+print(type(txt))
+
+
+
+age = 36
+txt = "My name is John, I am " + str(age)
+print(type(txt))
+
+age = 36
+txt = "My name is John, and I am {}"
+print(txt.format(age))
+print(type(txt.format(age)))

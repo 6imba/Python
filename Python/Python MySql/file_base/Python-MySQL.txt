@@ -1,0 +1,8 @@
+> If you want to connect mysql with any language you need a connector in between.
+> Likewise, mysql-connector is used to connect mysql with python.
+> pip install mysql-connector
+> import the connector in the app_script_module.
+
+
+# database and table is saved in C:\ProgramData\MySQL\MySQL Server 8.0\Data...
+

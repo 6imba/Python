@@ -1,0 +1,178 @@
+for key in sorted(dis.keys(),key=lambda k:dis[k])
+
+
+for key in sorted(dis.keys(),key=lambda k:dis[k],reverse=True):
+    print('{} has frequency of {}.'.format(key,dis[key])) 
+
+2     C:\Users\SimbA\OneDrive\Desktop\Python\3.Data Collection and Processing with Python\Week 1 Nested Data and Nested Iteration
+# 9
+#Shallow and deep copy
+import copy
+list1 = [[2,4],['a','b']]
+list2 = list1 #assignment operator
+list3 = list1[:] # shallow copy or deep copy ?
+list4 = copy.deepcopy(list1)# deeper copy slice to new object
+list1.append(666666)
+list1[0].append(6)
+
+print('List_1 ( orginal) : ',list1)# orginal
+print('Id_1 : ',id(list1))
+print('List_2  (assignment) : ',list2)#assignment 
+print('Id_2 : ',id(list2))
+print('List_3 (shallow_copy) : ',list3)# shallow copy
+print('Id_3 : ',id(list3))
+print('List_4 (deeper_copy) : ',list4)# deeper copy
+print('Id_4 : ',id(list4))
+
+
+#3   C:\Users\SimbA\OneDrive\Desktop\Python\3.Data Collection and Processing with Python\Week 1 Nested Data and Nested Iteration
+jsfile = open ('8.1.Json.File.txt')
+text = jsfile.read()
+print(text)
+print(type(text))
+
+import json
+jsfile = json.loads(text) # convert str file to json/dictiony file
+print(jsfile)
+print(type(jsfile))
+
+
+
+#4
+
+species = ['golden retriever', 'white tailed deer', 'black rhino', 'brown squirrel', 'field mouse', 'orangutan', 'sumatran elephant', 'rainbow trout', 'black bear', 'blue whale', 'water moccasin', 'giant panda', 'green turtle', 'blue jay', 'japanese beetle']
+population = [10000, 90000, 1000, 2000000, 500000, 500, 1200, 8000, 12000, 2300, 7500, 100, 1800, 9500, 125000]
+pop_info = zip(species,population)
+endangered = list(filter( lambda species,population : species if population<2500 ,pop_info))
+print(endangered)
+
+
+
+#5
+from 2.Module import add  ==> how to import from a file name starting from number
+
+\
+
+
+#6
+word_string = ''' i am 
+	          amir
+		  and i am 21.
+		'''
+word_list =  re.sub("[^\w]", " ",  word_string).split()  == error
+word_list =  re.sub("[^\\w]", " ",  word_string).split() == soln
+
+
+#7
+blank = '_ _ _ _'
+name = 'amir'
+print (blank.replace(blank[2],'m'))     output:'m m m m'    wanted:'_ m _ _'
+
+
+
+#8
+mero vscode ma file ko path recoznize gardaina , absolute patha matra linxa ????
+pendrive bata laptop ma code copy garya tye...???
+
+import os
+THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
+my_file = os.path.join(THIS_FOLDER, '1.CSV_Formate.txt')
+my_code = os.path.join(THIS_FOLDER, '1.CSV.py')
+
+print(my_file)
+print(my_code)
+
+
+#9
+ids = [172,201,387,114]
+name = ['Amir','Ram','Bipin','Suraj']
+email = ['a.com','r.com','b.com','s.com']
+person_info = list(zip(ids,name,email))
+print(person_info)
+
+class Person:
+    def __init__(self,id1,name1,email1):
+        self.id2 = id1
+        self.name1 = name1
+        self.email1 = email1
+       
+    def __str__(self):
+        return '{} , {} , email:{}'.format(self.id2, self.name1, self.email1)
+Manxe = []
+for person_tuple in person_info:
+    ID,Name,Email = person_tuple
+    person1obj = Person(ID,Name,Email)
+    Manxe.append(person1obj)  #why not append atring as --str-- returns string instead of object
+print(Manxe)
+
+
+
+
+# 10
+class Fruits:
+    
+    def __init__(self,fruit_name,price): # constructor/instancating object
+        self.fruit_name=fruit_name
+        self.price=price
+        
+    def sort_piority(self):
+        return self.price
+    
+list_of_fruits = [ Fruits('Apple',120), # list of instances
+                   Fruits('Banana',350),
+                   Fruits('Coconot',245)
+                 ]
+                 
+for fruit in sorted(list_of_fruits,key=lambda x :x.sort_piority()): # sorting and printing list of instances
+    print(fruit.fruit_name)
+
+
+#11
+#how to print object_string from list of object
+
+
+
+
+
+#12
+# what is difference betweeen __str__ and __repr__
+class Book:
+    def __init__(self,title,author):
+        self.title = title
+        self.author=author
+        
+    def __str__(self): # soln
+        return '{} by {}.'.format(self.title,self.author)
+        
+    def __repr__(self): # soln
+        return '{} by {}.'.format(self.title,self.author)
+        
+class PersonnelBook(Book): 
+    def __init__(self,title,author,content):
+        super().__init__(title,author)
+        self.content = content
+        
+
+    
+my_personnel_book = PersonnelBook('Jiban Katha','Sakhyamuni','1 Million')
+print(my_personnel_book)
+print(my_personnel_book.__str__())
+print(my_personnel_book.__repr__())
+
+
+
+
+
+#13
+Is there any reason for a class declaration to inherit from object?
+I just found some code that does this and I can't find a good reason why.
+class MyClass(object):
+    # class code follws...
+what is inherit from the object in python
+
+
+
+
+#14
+explicitly and implicit
+

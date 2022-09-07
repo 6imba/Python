@@ -1,0 +1,298 @@
+Questions from the following topics will be asked again in the specified number of days:
+Note: Only the pages you've marked as complete, at the bottom of the page, are the ones that are eligible for practice.
+
+Variables, Statements, and Expressions
+Data Types:
+
+0 days
+Variables:
+
+0 days
+Variable Names and Keywords:
+
+0 days
+Reassignment:
+
+0 days
+Statements and Expressions:
+
+0 days
+Updating Variables:
+
+0 days
+Input:
+
+0 days
+Python Turtle
+Instances: A Herd of Turtles:
+
+0 days
+Object Oriented Concepts:
+
+0 days
+Debugging
+Syntax errors:
+
+0 days
+Runtime Errors:
+
+0 days
+Semantic Errors:
+
+0 days
+👩‍💻 Know Your Error Messages:
+
+0 days
+Sequences
+Strings and Lists:
+
+0 days
+Index Operator: Working with the Characters of a String:
+
+0 days
+Disabmiguating []: creation vs indexing:
+
+0 days
+Length:
+
+0 days
+The Slice Operator:
+
+0 days
+Concatenation and Repetition:
+
+0 days
+Count and Index:
+
+0 days
+Splitting and Joining Strings:
+
+0 days
+Iteration
+Strings and for loops:
+
+0 days
+Lists and for loops:
+
+0 days
+The Accumulator Pattern:
+
+0 days
+Traversal and the for Loop: By Index:
+
+0 days
+👩‍💻 Keeping Track of Your Iterator Variable and Your Iterable:
+
+0 days
+Conditionals
+Boolean Values and Boolean Expressions:
+
+0 days
+Logical operators:
+
+0 days
+Precedence of Operators:
+
+0 days
+Conditional Execution: Binary Selection:
+
+0 days
+Omitting the else Clause: Unary Selection:
+
+0 days
+Nested conditionals:
+
+0 days
+Chained conditionals:
+
+0 days
+👩‍💻 Setting Up Conditionals:
+
+0 days
+The Accumulator Pattern with Conditionals:
+
+0 days
+Transforming Sequences
+Mutability:
+
+0 days
+Objects and References:
+
+0 days
+Aliasing:
+
+0 days
+Cloning Lists:
+
+0 days
+Mutating Methods:
+
+0 days
+Append versus Concatenate:
+
+0 days
+Non-mutating Methods on Strings:
+
+0 days
+The Accumulator Pattern with Lists:
+
+0 days
+The Accumulator Pattern with Strings:
+
+0 days
+👩‍💻 Accumulator Pattern Strategies:
+
+0 days
+Files
+Alternative File Reading Methods:
+
+0 days
+Iterating over lines in a file:
+
+0 days
+Finding a File in your Filesystem:
+
+0 days
+Reading in data from a CSV File:
+
+0 days
+Dictionaries
+Getting Started with Dictionaries:
+
+0 days
+Dictionary operations:
+
+0 days
+Dictionary methods:
+
+0 days
+Introduction: Accumulating Multiple Results In a Dictionary:
+
+0 days
+Accumulating Results From a Dictionary:
+
+0 days
+Accumulating the Best Key:
+
+0 days
+Functions
+Function Invocation:
+
+0 days
+Function Parameters:
+
+0 days
+Returning a value from a function:
+
+0 days
+👩‍💻 Decoding a Function:
+
+0 days
+A function that accumulates:
+
+0 days
+Variables and parameters are local:
+
+0 days
+Functions can call other functions (Composition):
+
+0 days
+Flow of Execution Summary:
+
+0 days
+👩‍💻 Print vs. return:
+
+0 days
+Tuple Packing and Unpacking
+Tuple Packing:
+
+0 days
+Tuples as Return Values:
+
+0 days
+Tuple Assignment with Unpacking:
+
+0 days
+More About Iteration
+The while Statement:
+
+0 days
+Advanced Functions
+Keyword Parameters:
+
+0 days
+Anonymous functions with lambda expressions:
+
+0 days
+Sorting
+Introduction: Sorting with Sort and Sorted:
+
+0 days
+Optional reverse parameter:
+
+0 days
+Optional key parameter:
+
+0 days
+Advanced Functions
+Introduction: Optional Parameters:
+
+0 days
+Sorting
+Sorting a Dictionary:
+
+0 days
+Breaking Ties: Second Sorting:
+
+0 days
+Nested Data and Nested Iteration
+Introduction: Nested Data and Nested Iteration:
+
+0 days
+Nested Dictionaries:
+
+0 days
+Processing JSON results:
+
+0 days
+Variables, Statements, and Expressions
+Operators and Operands:
+
+0 days
+More on Accumulation: Map, Filter, List Comprehension, and Zip
+Map:
+
+0 days
+Filter:
+
+0 days
+List Comprehensions:
+
+0 days
+Zip:
+
+0 days
+Internet APIs
+Fetching a page:
+
+0 days
+Figuring Out How to Use a REST API:
+
+0 days
+Exceptions
+What is an exception?:
+
+
+
+
+
+
+
+
+test-1-3: Test cases are a waste of time, because the python interpreter will give an error message when the program runs incorrectly, and that’s all you need for debugging.
+
+A. True
+B. False
+
+✔️ Test cases let you test some pieces of code as you write them, rather than waiting for problems to show themselves later.
+
